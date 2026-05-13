@@ -30,4 +30,4 @@ Now, instead of autonomously rewriting hundreds of lines of code and wasting tok
 | Scaffolding a Project | ~8000 Output Tokens | ~500 Output Tokens |
 
 ## Contributing
-Contributions are welcome. Feel free to open issues or submit pull requests to improve the strictness and efficiency of the HITL prompt.
+Contributions are welcome. Feel free to open issues or submit pull requests to improve the strictness and efficiency of the HIL prompt.
