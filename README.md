@@ -5,6 +5,7 @@ A local configuration wrapper to reduce token usage by restricting Claude Code t
 ## How to Use
 
 ### 1
+##
 
 This tool is designed to run locally within your specific project directory. 
 
@@ -15,7 +16,7 @@ This tool is designed to run locally within your specific project directory.
    `./HIL_claude.sh`
 
 ### 2 
-## How to Use
+## 
 
 1. Clone the repository:
    `git clone https://github.com/yourusername/HILClaude.git`
