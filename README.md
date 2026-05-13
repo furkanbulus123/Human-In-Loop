@@ -1,4 +1,4 @@
-# LeanClaude: Token Saver for Claude Code
+# HILClaude: Token Saver for Claude Code
 
 Claude Code is a highly capable tool, but its autonomous file reading and terminal execution loops (agentic loops) can lead to massive API bills. LeanClaude is a configuration wrapper that restricts Claude Code using a "Human-in-the-Loop" (HITL) architecture, aiming to reduce output token usage by up to 80%.
 
@@ -24,7 +24,7 @@ Now, instead of autonomously rewriting hundreds of lines of code and wasting tok
  2. If successful, change line 14 in server.js to the following snippet..."
 
 ## Estimated Cost Comparison
-| Task | Standard Claude Code | LeanClaude (This Repo) |
+| Task | Standard Claude Code | HILClaude (This Repo) |
 |------|----------------------|------------------------|
 | Debugging (1 Loop) | ~4000 Output Tokens | ~250 Output Tokens |
 | Scaffolding a Project | ~8000 Output Tokens | ~500 Output Tokens |
