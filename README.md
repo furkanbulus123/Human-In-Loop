@@ -15,9 +15,9 @@ The HILClaude architecture disables Claude Code's autonomous tool-use capabiliti
 2. Navigate into the directory:
    `cd HILClaude`
 3. Make the script executable:
-   `chmod +x HIL-claude.sh`
+   `chmod +x HIL_claude.sh`
 4. Run the wrapper script:
-   `./HIL-claude.sh`
+   `./HIL_claude.sh`
 
 Now, instead of autonomously rewriting hundreds of lines of code and wasting tokens, Claude Code will respond with targeted instructions:
 "1. Run `npm install express` and report back the result.
@@ -25,7 +25,7 @@ Now, instead of autonomously rewriting hundreds of lines of code and wasting tok
 
 ## Estimated Cost Comparison
 | Task | Standard Claude Code | HILClaude (This Repo) |
-|------|----------------------|------------------------|
+|------|----------------------|-----------------------|
 | Debugging (1 Loop) | ~4000 Output Tokens | ~250 Output Tokens |
 | Scaffolding a Project | ~8000 Output Tokens | ~500 Output Tokens |
 
