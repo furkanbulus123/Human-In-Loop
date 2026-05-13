@@ -4,7 +4,7 @@ A local configuration wrapper to reduce token usage by restricting Claude Code t
 
 ## How to Use
 This tool is designed to run locally within your specific project directory. 
-### 1
+### 1. WAY
 ##
 
 1. Copy the `HIL_claude.sh` and `HIL_prompt.md` files into the folder where you want to work.
@@ -14,7 +14,7 @@ This tool is designed to run locally within your specific project directory.
    `./HIL_claude.sh`
 ##
 
-### 2 
+### 2. WAY
 ## 
 
 1. Clone the repository:
