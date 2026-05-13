@@ -22,8 +22,8 @@ This tool is designed to run locally within your specific project directory.
 2. Navigate into the directory:
    `cd Human-In-Loop`
 3. Make the script executable:
-    For Mac/Linux: Run chmod +x HIL_claude.sh and then execute ./HIL_claude.sh
-       For Windows: Just run .\HIL_claude.bat in your Command Prompt or PowerShell (No chmod required).
+    For Mac/Linux: 'Run chmod +x HIL_claude.sh' and then execute './HIL_claude.sh'
+       For Windows: Just run '.\HIL_claude.bat' in your Command Prompt or PowerShell (No chmod required).
 4. Run the wrapper script:
    `./HIL_claude.sh`
 ##
