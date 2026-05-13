@@ -20,7 +20,7 @@ This tool is designed to run locally within your specific project directory.
 1. Clone the repository:
    `git clone https://github.com/furkanbulus123/Human-In-Loop.git`
 2. Navigate into the directory:
-   `cd HILClaude`
+   `cd Human-In-Loop`
 3. Make the script executable:
    `chmod +x HIL_claude.sh`
 4. Run the wrapper script:
