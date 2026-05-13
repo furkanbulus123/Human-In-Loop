@@ -1,13 +1,13 @@
 #!/bin/bash
-# Lean Claude Code Launcher
+# HILClaude Launcher
 
-PROMPT_FILE="lean_prompt.md"
+PROMPT_FILE="HIL_prompt.md"
 
 if [ ! -f "$PROMPT_FILE" ]; then
-    echo "Error: $PROMPT_FILE not found. Please ensure you are in the LeanClaude directory."
+    echo "Error: $PROMPT_FILE not found. Please ensure you are in the HILClaude directory."
     exit 1
 fi
 
-echo "Starting Lean Claude. Autonomous actions disabled, token saver active."
+echo "Starting HILClaude. Autonomous actions disabled, token saver active."
 # Launch Claude Code with the restrictive prompt
 claude -p "$(cat $PROMPT_FILE)"
