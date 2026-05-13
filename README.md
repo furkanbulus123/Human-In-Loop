@@ -1,33 +1,15 @@
-# HILClaude: Token Saver for Claude Code
+# HILClaude
 
-Claude Code is a highly capable tool, but its autonomous file reading and terminal execution loops (agentic loops) can lead to massive API bills. HILClaude is a configuration wrapper that restricts Claude Code using a "Human-in-the-Loop" (HITL) architecture, aiming to reduce output token usage by up to 80%.
-
-## The Problem: Why Does Claude Code Consume So Many Tokens?
-When Claude Code encounters an error or develops a feature, it autonomously uses the terminal, reads files from scratch, and retries repeatedly. Output tokens are significantly more expensive than input tokens, and this autonomous loop can quickly spiral out of control, resulting in slow response times and high computational costs.
-
-## The Solution: Orchestrator Mode
-The HILClaude architecture disables Claude Code's autonomous tool-use capabilities. Instead, Claude acts strictly as an orchestrator. It makes architectural decisions and provides the exact commands as plain text for the developer to execute. The human does the heavy lifting (terminal execution, file management), while the AI provides the intelligence.
+A local configuration wrapper to reduce token usage by restricting Claude Code to a "Human-in-the-Loop" architecture.
 
 ## How to Use
 
-1. Clone the repository:
-   `git clone https://github.com/yourusername/HILClaude.git`
-2. Navigate into the directory:
-   `cd HILClaude`
-3. Make the script executable:
+This tool is designed to run locally within your specific project directory. 
+
+1. Copy the `HIL_claude.sh` and `HIL_prompt.md` files into the folder where you want to work.
+2. Open your terminal in that directory and make the script executable:
    `chmod +x HIL_claude.sh`
-4. Run the wrapper script:
+3. Instead of typing the standard `claude` command, start the tool by running:
    `./HIL_claude.sh`
 
-Now, instead of autonomously rewriting hundreds of lines of code and wasting tokens, Claude Code will respond with targeted instructions:
-"1. Run `npm install express` and report back the result.
- 2. If successful, change line 14 in server.js to the following snippet..."
-
-## Estimated Cost Comparison
-| Task | Standard Claude Code | HILClaude (This Repo) |
-|------|----------------------|-----------------------|
-| Debugging (1 Loop) | ~4000 Output Tokens | ~250 Output Tokens |
-| Scaffolding a Project | ~8000 Output Tokens | ~500 Output Tokens |
-
-## Contributing
-Contributions are welcome. Feel free to open issues or submit pull requests to improve the strictness and efficiency of the HIL prompt.
+Claude will now act strictly as an orchestrator, giving you exact commands to execute manually rather than running them autonomously.
