@@ -19,4 +19,3 @@ You can instantly apply this configuration to any of your projects without leavi
 curl -o CLAUDE.md [https://raw.githubusercontent.com/furkanbulus123/Human-In-Loop/main/CLAUDE.md](https://raw.githubusercontent.com/furkanbulus123/Human-In-Loop/main/CLAUDE.md)
 
 
-Claude will automatically read the rules and stop wasting tokens on autonomous terminal loops. It will now only give you bullet-point instructions to run manually.
