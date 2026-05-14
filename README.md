@@ -16,6 +16,6 @@ HILClaude utilizes Claude's native `CLAUDE.md` system prompt feature. It disable
 You can instantly apply this configuration to any of your projects without leaving the terminal. Run the following command in your project's root directory:
 
 ```bash
-curl -o CLAUDE.md [https://raw.githubusercontent.com/furkanbulus123/Human-In-Loop/main/CLAUDE.md](https://raw.githubusercontent.com/furkanbulus123/Human-In-Loop/main/CLAUDE.md)
+curl -o CLAUDE.md https://raw.githubusercontent.com/furkanbulus123/Human-In-Loop/main/CLAUDE.md
 
 
