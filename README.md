@@ -1,32 +1,15 @@
-# HILClaude
+# HILClaude: Token Saver for Claude Code
 
-A local configuration wrapper to reduce token usage by restricting Claude Code to a "Human-in-the-Loop" architecture.
+Claude Code is a highly capable tool, but its autonomous file reading and terminal execution loops can lead to massive API bills. HILClaude reduces your output token usage by up to 80% by forcing Claude Code into a "Human-in-the-Loop" (HITL) architecture.
+
+## How it Works
+HILClaude utilizes Claude's native `CLAUDE.md` system prompt feature. It disables Claude's autonomous tool-use capabilities, turning it into an orchestrator. It makes architectural decisions and provides the exact commands as plain text. You do the heavy lifting (executing in the terminal), while the AI provides the intelligence.
 
 ## How to Use
-This tool is designed to run locally within your specific project directory. 
-### 1. WAY
-##
 
-1. Copy the `HIL_claude.sh` and `HIL_prompt.md` files into the folder where you want to work.
-2. Open your terminal in that directory and make the script executable:
-   `chmod +x HIL_claude.sh`
-3. Instead of typing the standard `claude` command, start the tool by running:
-   `./HIL_claude.sh`
-##
+1. Copy the `CLAUDE.md` file from this repository into the root directory of your own project.
+2. Open your terminal in your project directory.
+3. Simply start Claude Code normally:
+   `claude`
 
-### 2. WAY
-## 
-
-1. Clone the repository:
-   `git clone https://github.com/furkanbulus123/Human-In-Loop.git`
-2. Navigate into the directory:
-   `cd Human-In-Loop`
-3. Make the script executable:
-    For Mac/Linux: 'Run chmod +x HIL_claude.sh' and then execute './HIL_claude.sh'
-       For Windows: Just run '.\HIL_claude.bat' in your Command Prompt or PowerShell (No chmod required).
-4. Run the wrapper script:
-   `./HIL_claude.sh`
-##
-   
-
-Claude will now act strictly as an orchestrator, giving you exact commands to execute manually rather than running them autonomously.
+Claude will automatically read the rules and stop wasting tokens on autonomous terminal loops. It will now only give you bullet-point instructions to run manually.
